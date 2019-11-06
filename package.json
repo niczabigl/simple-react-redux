@@ -1,0 +1,94 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Base WebApps",
+  "main": "src/js/index.js",
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "child_process": "^1.0.2",
+    "ftp": "^0.3.10",
+    "gulp-exec": "^3.0.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-react-app": "^9.0.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.2.3",
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-contains": "^1.1.0",
+    "gulp-find": "0.0.10",
+    "mocha": "^5.2.0",
+    "react": "^16.8.6",
+    "react-app": "^1.1.2",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "request": "^2.87.0",
+    "standard": "^10.0.3",
+    "stream-notifier": "0.0.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "scripts": {
+    "pro": "npm run validate && gulp build --pro",
+    "pre": "gulp build --pre",
+    "dev": "gulp build --dev",
+    "test": "gulp build --distTest",
+    "update-comerciajs": "gulp update",
+    "update-printerLib": "gulp update-printerLib",
+    "config-comerciajs": "node ./config/createComerciaJS.js",
+    "config-ingeweb": "node ./config/createIngeweb.js",
+    "config-printerLib": "node ./config/createPrinterLib.js",
+    "config": "npm install && npm run config-comerciajs && npm run config-ingeweb && npm run update-comerciajs",
+    "validate": "standard",
+    "validateFix": "standard --fix",
+    "clean-npm": "npm cache clean --force && rm -rf node_modules && rm package-lock.json",
+    "build": "npm run validate && gulp build ",
+    "package": " gulp package",
+    "deploy": " gulp deploy"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Ingenico",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      ["@babel/preset-react"],
+      ["@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      [
+        "react-app",
+        {
+          "helpers": false,
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "gulpfile.js",
+      "/dist/",
+      "distTest/",
+      "/dev/",
+      "/pre/",
+      "/src/lib/",
+      "/test/",
+      "/node_modules/",
+      "/config/"
+    ]
+  }
+}
