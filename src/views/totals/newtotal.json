@@ -1,0 +1,949 @@
+{
+  "TR-RESP": {
+      "VersionInfo": {
+          "Version": "02.00",
+          "Release": "01.00"
+      },
+      "Processor": {
+          "Status": 0,
+          "Session": {
+              "Date": "20180414",
+              "Number": 12
+          }
+      },
+      "Operation": {
+          "ResponseCode": "600",
+          "Payload": {
+              "Session": {
+                  "Date": "20180414",
+                  "Number": 12
+              },
+              "Merchant": {
+                  "Id": "008043853",
+                  "Location": "BARCELONA",
+                  "Name": "Comercio Prueba S.L."
+              },
+              "Report": {
+                  "Date": "20181114",
+                  "Time": "1840",
+                  "Currency": "978",
+                  "FirstTransaction": "000010",
+                  "LastTransaction": "000029",
+                  "FirstDate": "20181114",
+                  "LastDate": "20181114",
+                  "BusinessUnit": {
+                      "Num": "00000001"
+                  },
+                  "Session": {
+                      "Date": "20180414",
+                      "Number": 12
+                  },
+                  "Transactions": [
+                      {
+                          "Type": "Payment",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ]
+                      },
+                      {
+                          "Type": "Refund",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "Preauthorization",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ]
+                      },
+                      {
+                          "Type": "PreauthorizationUpdate",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "PreauthorizationConfirmation",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "Cashout",
+                          "Status": "0",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "Payment",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ]
+                      },
+                      {
+                          "Type": "Refund",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "Preauthorization",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ]
+                      },
+                      {
+                          "Type": "PreauthorizationUpdate",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "PreauthorizationConfirmation",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [
+                              {
+                                  "Id": "MultiCurrency",
+                                  "Status": 2,
+                                  "Currency": "USD",
+                                  "CurrencyExponent": "2",
+                                  "Amount": "5000",
+                                  "AmountnoMarkup": "98",
+                                  "Mark-up": "000101",
+                                  "Exchange": "61421434",
+                                  "DCCType": "01",
+                                  "CARDlang": "ENG",
+                                  "CARDcountry": "en"
+                              },
+                              {
+                                  "Id": "SplitPayment",
+                                  "Status": 2,
+                                  "Installments": 3
+                              },
+                              {
+                                  "Id": "TaxFree",
+                                  "Status": 2,
+                                  "Country": "USA"
+                              },
+                              {
+                                  "Id": "Cashout",
+                                  "Status": 1
+                              }
+                          ],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      },
+                      {
+                          "Type": "Cashout",
+                          "Status": "1",
+                          "Id": "000028",
+                          "Authorization": "51767",
+                          "Amount": "100",
+                          "Currency": "EUR",
+                          "Location": "Av. Comercia 99",
+                          "CardBank": "Bank",
+                          "CardNumber": "************0056",
+                          "CardIssuer:": "Visa",
+                          "CardType:": "Credit",
+                          "CardHolder": "SMITH JOHN",
+                          "CardTechnology:": 2,
+                          "Date": "20181114",
+                          "Time": "1838",
+                          "TerminalId": "123456789",
+                          "SignatureIndicator": 0,
+                          "PinIndicator": 1,
+                          "Language": "es",
+                          "Templates": [
+                              {
+                                  "Id": "CustomerTicket_standard",
+                                  "Target": "CustomerTicket",
+                                  "Data": {
+                                      "Promo": "This is a promotion text"
+                                  }
+                              },
+                              {
+                                  "Id": "MerchantTicket_standard",
+                                  "Target": "MerchantTicket",
+                                  "Data": {}
+                              }
+                          ],
+                          "Modifiers": [],
+                          "OriginalTransactionId": "000027",
+                          "OriginalTransactionDate": "171112"
+                      }
+                  ],
+                  "TypeStatusReport": {
+                      "Quantity": 50,
+                      "Amount": "1000000",
+                      "Types": [
+                          {
+                              "Payment": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          },
+                          {
+                              "Refund": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          },
+                          {
+                              "Preauthorization": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          },
+                          {
+                              "PreauthorizationUpdate": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          },
+                          {
+                              "PreauthorizationConfirmation": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          },
+                          {
+                              "Cashout": {
+                                  "Quantity": 5,
+                                  "Amount": "20000",
+                                  "Indexes": [
+                                      0,
+                                      5,
+                                      7,
+                                      8,
+                                      10
+                                  ]
+                              }
+                          }
+                      ]
+                  },
+                  "MultiCurrencyReport": {
+                      "Susceptible": {
+                          "Quantity": 4,
+                          "Amount": "40000",
+                          "Summary": [
+                              {
+                                  "Currency": "USD",
+                                  "Quantity": 2,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      6,
+                                      9
+                                  ]
+                              },
+                              {
+                                  "Currency": "GBP",
+                                  "Quantity": 2,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      6,
+                                      9
+                                  ]
+                              }
+                          ]
+                      },
+                      "Converted": {
+                          "Quantity": 4,
+                          "Amount": "40000",
+                          "Summary": [
+                              {
+                                  "Currency": "USD",
+                                  "Quantity": 2,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      6,
+                                      9
+                                  ]
+                              },
+                              {
+                                  "Currency": "GBP",
+                                  "Quantity": 2,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      6,
+                                      9
+                                  ]
+                              }
+                          ]
+                      },
+                      "Ratio": 40
+                  },
+                  "SplitPaymentReport": {
+                      "Susceptible": {
+                          "Quantity": 9,
+                          "Amount": "90000",
+                          "Indexes": [
+                              0,
+                              1,
+                              4,
+                              6,
+                              7,
+                              8,
+                              9,
+                              11,
+                              18
+                          ]
+                      },
+                      "Converted": {
+                          "Quantity": 9,
+                          "Amount": "90000",
+                          "Summary": [
+                              {
+                                  "Months": 3,
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      2,
+                                      9
+                                  ]
+                              },
+                              {
+                                  "Months": 6,
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      2,
+                                      9
+                                  ]
+                              },
+                              {
+                                  "Months": 9,
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      2,
+                                      9
+                                  ]
+                              }
+                          ]
+                      },
+                      "Ratio": 40
+                  },
+                  "TaxFreeReport": {
+                      "Susceptible": {
+                          "Quantity": 9,
+                          "Amount": "90000",
+                          "Summary": [
+                              {
+                                  "Country": "COL",
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      4,
+                                      6
+                                  ]
+                              },
+                              {
+                                  "Country": "CHL",
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      4,
+                                      6
+                                  ]
+                              },
+                              {
+                                  "Country": "ARG",
+                                  "Quantity": 3,
+                                  "Amount": "10000",
+                                  "Indexes": [
+                                      1,
+                                      4,
+                                      6
+                                  ]
+                              }
+                          ]
+                      }
+                  }
+              }
+          }
+      },
+      "ProcessingResult": {
+          "ProcessingStatus": 0
+      }
+  }
+}

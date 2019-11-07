@@ -1,0 +1,9 @@
+export const INITIAL_STATE_CURSO = { titulo: '', autor: '', estado: false }
+export const CREAR_CURSO = 'CREAR_CURSO'
+export const INCREMENTAR_ID = 'INCREMENTAR_ID'
+export const DECREMENTAR_ID = 'DECREMENTAR_ID'
+export const BORRAR_CURSO = 'BORRAR_CURSO'
+export const SELECCIONAR_CURSO = 'SELECCIONAR_CURSO'
+export const DESELECCIONAR_CURSO = 'DESELECCIONAR_CURSO'
+export const DESELECCIONAR_TODO = 'DESELECCIONAR_TODO'
+export const EDIT_CURSO = 'EDIT_CURSO'
